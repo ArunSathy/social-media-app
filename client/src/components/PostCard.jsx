@@ -3,12 +3,15 @@ import { BadgeCheck, Heart, MessageCircle, Share2 } from 'lucide-react'
 import moment from 'moment'
 import { dummyUserData } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
+import CommentSection from './CommentSection'
 
 const PostCard = ({post}) => {
 
     const postWithHashTags = post.content.replace(/(#\w+)/g, '<span class = "text-indigo-600">$1</span>')
 
     const [likes, setLikes]= useState(post.likes_count)
+    const [comments, setComments]=  useState(post.comments_count)
+    const [showComment, setShowComment] = useState(false)
     const currentUser = dummyUserData
 
     const handleLike = async () => {
@@ -59,14 +62,18 @@ const PostCard = ({post}) => {
                 <span>{likes.length}</span>
             </div>
             <div className='flex items-center gap-1'>
-                <MessageCircle className='w-4 h-4' />
-                <span>{12}</span>
+                <MessageCircle onClick={()=>setShowComment(true)} className='w-4 h-4' />
+                <span>{comments.length}</span>
             </div>
             <div className='flex items-center gap-1'>
                 <Share2 className='w-4 h-4' />
                 <span>{7}</span>
             </div>
         </div>
+
+        
+        {showComment && <CommentSection setShowComment={setShowComment} />}
+
     </div>
   )
 }

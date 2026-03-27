@@ -120,6 +120,41 @@ export const dummyStoriesData = [
     }
 ]
 
+export const dummyCommentsData = [
+    {
+        "_id": "6811ed9e7836a82ba747cb25",
+        "post": "68773e977db16954a783839c",
+        "user": dummyUserData,
+        "comment": "This is a sample comment.",
+        "createdAt": "2025-07-25T08:13:18.111Z",
+        "updatedAt": "2025-07-25T08:13:18.111Z",
+    },
+    {
+        "_id": "6810a752fbb942aa7cbf4adb",
+        "post": "68773e977db16954a783839c",
+        "user": dummyUserData,
+        "comment": "This is post is very good",
+        "createdAt": "2025-07-25T08:13:18.111Z",
+        "updatedAt": "2025-07-25T08:13:18.111Z",
+    },
+    {
+        "_id": "680779aebef75c08f8b4898f",
+        "post": "68773e977db16954a783839c",
+        "user": dummyUserData,
+        "comment": "I liked this post",
+        "createdAt": "2025-07-25T08:13:18.111Z",
+        "updatedAt": "2025-07-25T08:13:18.111Z",
+    },
+    {
+        "_id": "680770aeb2897e5c28bf9b26",
+        "post": "68773e977db16954a783839c",
+        "user": dummyUserData,
+        "comment": "very informative post",
+        "createdAt": "2025-07-25T08:13:18.111Z",
+        "updatedAt": "2025-07-25T08:13:18.111Z",
+    },
+]
+
 
 export const dummyPostsData = [
     {
@@ -131,6 +166,7 @@ export const dummyPostsData = [
         ],
         "post_type": "text_with_image",
         "likes_count": [],
+        "comments_count": ["user_2zdJbcAqiOX9jq2DIueBRQn0lMt"],
         "createdAt": "2025-07-16T05:54:31.191Z",
         "updatedAt": "2025-07-16T05:54:31.191Z",
     },
@@ -141,6 +177,7 @@ export const dummyPostsData = [
         "image_urls": [],
         "post_type": "text",
         "likes_count": [],
+        "comments_count": ["user_2zdJbcAqiOX9jq2DIueBRQn0lMt"],
         "createdAt": "2025-07-09T13:22:12.601Z",
         "updatedAt": "2025-07-09T13:22:12.601Z",
     },
@@ -151,6 +188,7 @@ export const dummyPostsData = [
         "image_urls": [],
         "post_type": "text",
         "likes_count": [],
+        "comments_count": [],
         "createdAt": "2025-07-09T13:14:09.144Z",
         "updatedAt": "2025-07-09T13:14:09.144Z",
     },
@@ -165,6 +203,7 @@ export const dummyPostsData = [
         "likes_count": [
             "user_2zdJbcAqiOX9jq2DIueBRQn0lMt"
         ],
+        "comments_count": [],
         "createdAt": "2025-07-09T10:02:47.213Z",
         "updatedAt": "2025-07-09T10:09:37.075Z",
     },
@@ -177,6 +216,7 @@ export const dummyPostsData = [
         ],
         "post_type": "text_with_image",
         "likes_count": [],
+        "comments_count": [],
         "createdAt": "2025-07-09T09:44:08.626Z",
         "updatedAt": "2025-07-09T09:44:08.626Z",
     },
@@ -187,6 +227,7 @@ export const dummyPostsData = [
         "image_urls": [],
         "post_type": "text",
         "likes_count": [],
+        "comments_count": [],
         "createdAt": "2025-07-09T09:27:47.529Z",
         "updatedAt": "2025-07-09T09:27:47.529Z",
     }
